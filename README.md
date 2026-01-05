@@ -19,7 +19,7 @@
 
 ## 🎬 Demo en video
 
-"https://raw.githubusercontent.com/SergiusYT/Tux_Assistant/main/assets/video_demostracion.mp4"
+https://raw.githubusercontent.com/SergiusYT/Tux_Assistant/main/assets/video_demostracion.mp4
 
 <p align="center">
   <i>Tux Assistant en acción: estados animados, burbujas de diálogo e IA local integrada.</i>
