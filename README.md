@@ -99,8 +99,6 @@ La IA adopta el rol de **Tux**, con una personalidad amigable y enfoque en:
 
 ---
 
----
-
 ## 🖱️ Controles e interacción
 
 Tux Assistant está diseñado para ser **simple e intuitivo**, sin menús ni botones innecesarios.  
