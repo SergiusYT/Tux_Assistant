@@ -1,113 +1,163 @@
-🐧 Tux Assistant
-Un asistente de escritorio para Linux con IA local
-<p align="center"> <img src="assets/tux_sentado.gif" width="160"/> </p> <p align="center"> <b>Un asistente clásico, reinventado para Linux.</b><br> Inspirado en BonziBuddy y Clippy, pero con la filosofía open-source de Tux 🐧 </p>
-🎬 Demo en video
-
-👉🎬 Mira a Tux en acción aquí:
-
 <p align="center">
-  <video src="assets/video_demostracion.webm" width="720" controls></video>
+  <img src="assets/tux_sentado.gif" width="160"/>
 </p>
 
+<h1 align="center">🐧 Tux Assistant</h1>
 
-✨ ¿Qué es Tux Assistant?
+<p align="center">
+  <b>Un asistente de escritorio clásico, reinventado para Linux.</b><br>
+  Inspirado en BonziBuddy y Clippy, pero con la filosofía open-source de Tux 🐧
+</p>
 
-Tux Assistant es un asistente de escritorio flotante para Linux que vive directamente en tu escritorio, interactúa contigo mediante burbujas de texto y utiliza IA local para responder preguntas sin límites.
+<p align="center">
+  <img src="https://img.shields.io/badge/Linux-Desktop-FCC624?logo=linux&logoColor=black"/>
+  <img src="https://img.shields.io/badge/IA-Local-brightgreen"/>
+  <img src="https://img.shields.io/badge/Python-PyQt5-3776AB?logo=python&logoColor=white"/>
+</p>
 
-No es una ventana más.
-No es un chat común.
-Es un asistente visual, al estilo de los clásicos, pero adaptado al ecosistema Linux moderno.
+---
 
-💡 Origen de la idea
+## 🎬 Demo en video
 
-Durante mucho tiempo existieron asistentes de escritorio icónicos como:
+<p align="center">
+  <video src="assets/video_demostracion.mp4" width="720" controls></video>
+</p>
 
-🟣 BonziBuddy
+<p align="center">
+  <i>Tux Assistant en acción: estados animados, burbujas de diálogo e IA local integrada.</i>
+</p>
 
-📎 Clippy (Microsoft Office)
+---
 
-Buscando alternativas actuales, no encontré nada similar para Linux.
+## ✨ ¿Qué es Tux Assistant?
 
-Eso despertó la idea:
+**Tux Assistant** es un asistente de escritorio flotante para Linux que vive directamente en tu escritorio, interactúa contigo mediante burbujas de texto y utiliza **IA local** para responder preguntas sin depender de la nube.
 
-¿Por qué no crear un asistente propio, con la mascota oficial de Linux, que aproveche IA local y se sienta vivo en el escritorio?
+No es una ventana más.  
+No es un chat común.  
 
-Así nació Tux Assistant:
-un proyecto experimental, creativo y funcional, pensado para aportar algo diferente a Linux.
+👉 Es un **asistente visual**, al estilo de los clásicos, pero adaptado al ecosistema Linux moderno.
 
-🐧 Estados y animaciones de Tux
+---
 
-Tux no es estático.
-Cambia de animación dependiendo de lo que está haciendo, lo que le da vida y personalidad.
+## 💡 Origen de la idea
 
-Algunos de sus estados actuales:
+Durante años existieron asistentes de escritorio icónicos como:
 
-Estado	Animación
-Inactivo	tux_sentado.gif
-Pensando / Buscando	tux_busqueda.gif, tux_busqueda2.gif
-Relajado	tux_relajado.gif (varias variantes)
-Caminando	tux_caminando.gif
-<p align="center"> <img src="assets/tux_busqueda.gif" width="120"/> <img src="assets/tux_relajado.gif" width="120"/> <img src="assets/tux_caminando.gif" width="120"/> </p>
+- 🟣 **BonziBuddy**
+- 📎 **Clippy** (Microsoft Office)
 
-Cada animación ayuda a que el asistente se sienta presente y reactivo, no solo funcional.
+Buscando algo similar para Linux…  
+no encontré absolutamente nada.
 
-🧠 Inteligencia Artificial (100% local)
+Eso llevó a una pregunta simple pero poderosa:
 
-Tux Assistant utiliza Ollama para ejecutar modelos de IA localmente, sin depender de servicios externos.
+> **¿Por qué Linux no tiene su propio asistente de escritorio?**
 
-✔ Sin tokens
-✔ Sin límites de uso
-✔ Sin enviar datos a la nube
+Así nació **Tux Assistant**:  
+un proyecto experimental, creativo y funcional, usando a **Tux**, la mascota oficial de Linux, combinado con **IA local** para darle vida al escritorio.
+
+---
+
+## 🐧 Estados y animaciones de Tux
+
+Tux **no es estático**.  
+Cambia de animación según lo que esté haciendo, aportando personalidad y presencia visual.
+
+### Estados actuales
+
+| Estado | Animación |
+|------|----------|
+| Inactivo | `tux_sentado.gif` |
+| Pensando / Buscando | `tux_busqueda.gif`, `tux_busqueda2.gif` |
+| Relajado | `tux_relajado.gif` (varias variantes) |
+| Caminando | `tux_caminando.gif` |
+
+<p align="center">
+  <img src="assets/tux_busqueda.gif" width="120"/>
+  <img src="assets/tux_relajado.gif" width="120"/>
+  <img src="assets/tux_caminando.gif" width="120"/>
+</p>
+
+Cada animación refuerza la sensación de que **Tux está vivo en el escritorio**, no solo ejecutándose en segundo plano.
+
+---
+
+## 🧠 Inteligencia Artificial (100% local)
+
+Tux Assistant utiliza **Ollama** para ejecutar modelos de IA **localmente**, sin servicios externos.
+
+✔ Sin tokens  
+✔ Sin límites de uso  
+✔ Sin enviar datos a la nube  
 ✔ Funciona offline (tras descargar el modelo)
 
-La IA adopta el rol de Tux, con personalidad amigable y enfoque en Linux, programación y tecnología.
+La IA adopta el rol de **Tux**, con una personalidad amigable y enfoque en:
 
-🧰 Tecnologías utilizadas
-<p align="center"> <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/PyQt5-41CD52?logo=qt&logoColor=white"/> <img src="https://img.shields.io/badge/Ollama-000000?logo=linux&logoColor=white"/> <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black"/> <img src="https://img.shields.io/badge/IA%20Local-✔-brightgreen"/> </p>
-🧪 Estado del proyecto
+- Linux 🐧  
+- Programación 💻  
+- Tecnología ⚙️  
 
-🚧 Proyecto en desarrollo
+---
 
-Tux Assistant ya es funcional y usable, pero aún está en proceso de mejora:
+## 🧰 Tecnologías utilizadas
 
-Nuevos estados y animaciones
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PyQt5-41CD52?logo=qt&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Ollama-000000?logo=linux&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black"/>
+  <img src="https://img.shields.io/badge/IA%20Local-✔-brightgreen"/>
+</p>
 
-Más interacción directa con el sistema
+---
 
-Mejor memoria contextual
+## 🧪 Estado del proyecto
 
-Pulido visual y UX
+🚧 **Proyecto en desarrollo**
 
-Es una base sólida para seguir creciendo y experimentar con asistentes de escritorio en Linux.
+Tux Assistant ya es funcional, pero sigue evolucionando:
 
-📦 Instalación
+- Nuevos estados y animaciones  
+- Más interacción con el sistema  
+- Mejor memoria contextual  
+- Pulido visual y UX  
+
+Es una **base sólida** para experimentar y crear algo distinto dentro del ecosistema Linux.
+
+---
+
+## 📦 Instalación
 
 Las instrucciones completas de instalación se encuentran en:
 
-📄 INSTALACION.txt
+📄 **INSTALACION.txt**
 
-(Este README se enfoca en mostrar el proyecto, no en explicar su instalación paso a paso).
+> Este README se enfoca en mostrar el proyecto, no en detallar su instalación paso a paso.
 
-🙌 Autor
+---
+
+## 🙌 Autor
 
 Creado con pasión por:
 
-Sergio Lozano
+**Sergio Lozano**  
 🐧 Usuario de Linux | 💻 Desarrollador | 🚀 Entusiasta de IA local
 
-⭐ ¿Por qué este proyecto importa?
+---
+
+## ⭐ ¿Por qué este proyecto importa?
 
 Porque Linux también merece:
 
-asistentes creativos
+- asistentes creativos  
+- experiencias visuales  
+- proyectos distintos  
+- ideas fuera de lo común  
 
-experiencias visuales
+**Tux Assistant no busca reemplazar nada.**  
+Busca **inspirar**.
 
-proyectos distintos
-
-ideas fuera de lo común
-
-Tux Assistant no busca reemplazar nada.
-Busca inspirar.
-
-🐧 “El escritorio también puede tener personalidad.”
+<p align="center">
+  <b>🐧 “El escritorio también puede tener personalidad.”</b>
+</p>
