@@ -112,7 +112,7 @@ Todo se controla directamente desde el personaje en el escritorio.
 | 🖱️ **Click izquierdo + arrastrar** | Mover a Tux por el escritorio |
 | 🖱️ **Doble click izquierdo** | Abrir el chat y hablar con Tux |
 | 🖱️ **Click derecho** | Cerrar completamente el asistente |
-
+| 🖱️ **Click izquierdo en burbuja** | Cierra el globo de texto de Tux |
 </div>
 
 <br>
