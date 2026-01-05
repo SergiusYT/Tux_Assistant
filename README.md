@@ -20,7 +20,7 @@
 ## 🎬 Demo en video
 
 <p align="center">
-  <video src="assets/video_demostracion.mp4" width="720" controls></video>
+  <video src="https://github.com/SergiusYT/Tux_Assistant/blob/main/assets/video_demostracion.mp4" width="720" controls></video>
 </p>
 
 <p align="center">
