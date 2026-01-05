@@ -327,7 +327,7 @@ class Bubble(QLabel):
         self.setStyleSheet("""
             QLabel {
                 background-color: #0A0A0F;
-                border: 1.2px solid #FF6C2C;
+                border: 2px solid #FF6C2C;
                 border-radius: 20px;
                 padding: 15px;
                 font-size: 11pt;
