@@ -120,7 +120,7 @@ Todo se controla directamente desde el personaje en el escritorio.
 <br>
 
 <p align="center">
-  <img src="assets/tux_sentado.gif" width="120"/>
+  <img src="assets/tux_relajado5.gif" width="120"/>
 </p>
 
 <p align="center">
