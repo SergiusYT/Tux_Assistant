@@ -99,6 +99,40 @@ La IA adopta el rol de **Tux**, con una personalidad amigable y enfoque en:
 
 ---
 
+---
+
+## 🖱️ Controles e interacción
+
+Tux Assistant está diseñado para ser **simple e intuitivo**, sin menús ni botones innecesarios.  
+Todo se controla directamente desde el personaje en el escritorio.
+
+<div align="center">
+
+| Acción | Comportamiento |
+|------|---------------|
+| 🖱️ **Click izquierdo** | No realiza ninguna acción |
+| 🖱️ **Click izquierdo + arrastrar** | Mover a Tux por el escritorio |
+| 🖱️ **Doble click izquierdo** | Abrir el chat y hablar con Tux |
+| 🖱️ **Click derecho** | Cerrar completamente el asistente |
+
+</div>
+
+<br>
+
+<p align="center">
+  <img src="assets/tux_sentado.gif" width="120"/>
+</p>
+
+<p align="center">
+  <i>
+    Interacción minimalista, al estilo de los asistentes clásicos de escritorio.<br>
+    Tux siempre está presente, pero nunca estorba.
+  </i>
+</p>
+
+---
+
+
 ## 🧰 Tecnologías utilizadas
 
 <p align="center">
