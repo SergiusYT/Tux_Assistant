@@ -1,0 +1,19 @@
+# Entorno virtual
+venv/
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Configuraciones locales
+.env
+
+# Ollama / modelos locales
+models/
