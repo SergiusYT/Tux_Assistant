@@ -1,5 +1,3 @@
-
-https://github.com/user-attachments/assets/e8fe8e03-386e-47ee-84d8-d8a50263d4a6
 <p align="center">
   <img src="assets/tux_sentado.gif" width="140"/>
 </p>
