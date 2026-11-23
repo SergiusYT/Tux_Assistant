@@ -17,3 +17,4 @@ Thumbs.db
 
 # Ollama / modelos locales
 models/
+graphify-out/

@@ -1,174 +1,44 @@
-🐧 Tux Assistant — Guía de Instalación (Ubuntu)
+🐧 Tux Assistant — Instalación
 
-Asistente de escritorio con IA local usando **Ollama + PyQt5**.
+Un solo comando instala TODO: paquetes del sistema, el entorno de Python, Ollama (la IA local),
+el modelo de lenguaje, el acceso directo en el menú y el comando «tux-assistant».
 
----
+------------------------------------------------------------
+Opción 1 · Sin descargar nada antes (recomendada)
+------------------------------------------------------------
 
-## 📌 Requisitos previos
+    curl -fsSL https://raw.githubusercontent.com/SergiusYT/Tux_Assistant/main/instalar.sh | bash
 
-* Sistema operativo: **Ubuntu / Linux**
-* Python **3.9 o superior**
-* Arquitectura **x86_64**
-* Conexión a internet (solo para descargar el modelo)
+------------------------------------------------------------
+Opción 2 · Si ya tienes la carpeta del proyecto
+------------------------------------------------------------
 
-Verificar Python:
+    cd Tux_Assistant
+    bash instalar.sh
 
-codigo:
+Pedirá tu contraseña (sudo) para instalar paquetes y Ollama. No lo ejecutes como root.
+La primera vez descarga el modelo de IA (unos 2,5 GB); después todo funciona sin internet.
 
-    python3 --version
+Opciones:
+    bash instalar.sh -y              sin preguntas
+    bash instalar.sh --autostart     que Tux arranque al iniciar sesión
+    bash instalar.sh --modelo NOMBRE usar otro modelo de Ollama
+    bash instalar.sh --sin-modelo    no descargar el modelo ahora
+    bash instalar.sh --sin-ollama    no instalar Ollama (si ya lo manejas aparte)
 
+Compatible con: Ubuntu / Debian / Mint / Pop!_OS (apt), Fedora (dnf), Arch / Manjaro (pacman),
+openSUSE (zypper). Registro de la instalación: ~/.cache/tux-assistant/instalacion.log
 
----
+------------------------------------------------------------
+Abrir Tux Assistant
+------------------------------------------------------------
+    Menú de aplicaciones → «Tux Assistant»     o en una terminal:  tux-assistant
 
-## 1️⃣ Instalar Ollama (IA local)
+    Clic en Tux        → pregunta rápida (respuesta en su globo)
+    Doble clic en Tux  → cuaderno completo (preguntas, errores, rutas y progreso)
+    Clic derecho       → se despide y cierra todo (incluido el modelo en memoria)
 
-- Instalar Ollama:
-
-codigo:
-
-    curl -fsSL https://ollama.com/install.sh | sh
-
-
-- Verificar instalación:
-
-codigo:
-
-    ollama --version
-
-
-- Descargar un modelo potente (una sola vez):
-
-codigo:
-
-    ollama pull mistral
-
-
-> ℹ️ Ollama se ejecuta como servicio local.
-> No es necesario usar `ollama run` manualmente:
-> **Tux Assistant se encarga de comunicarse con él automáticamente.**
-
----
-
-## 2️⃣ Crear entorno virtual e instalar dependencias
-
-- Ubícate en la carpeta del proyecto:
-
-codigo:
-
-    cd /home/sergio-lozano/tux-assistant
-
-
-- Crear entorno virtual:
-
-codigo:
-
-    python3 -m venv venv
-
-
-- Activarlo:
-
-codigo:
-
-    source venv/bin/activate
-
-
-- Instalar dependencias:
-
-codigo:
-
-    pip install -r requirements.txt
-
-
----
-
-## 3️⃣ Dar permisos al ejecutable
-
-codigo:
-
-    chmod +x /home/sergio-lozano/tux-assistant/run.sh
-
----
-
-## 4️⃣ Crear acceso directo en el sistema
-
-- Crear archivo `.desktop`:
-
- codigo:
-    nano ~/.local/share/applications/tux-assistant.desktop
-
-
-- Pegar **exactamente** lo siguiente:
-
-
-[Desktop Entry]
-Name=Tux Assistant
-Comment=Asistente de escritorio Linux con IA local
-Exec=/home/sergio-lozano/tux-assistant/run.sh
-Icon=/home/sergio-lozano/tux-assistant/assets/tux.png
-Terminal=false
-Type=Application
-Categories=Utility;AI;
-StartupNotify=false
-
-
-Guardar:
-
-* `Ctrl + O`
-* `Enter`
-* `Ctrl + X`
-
-Dar permisos:
-
-codigo:
-
-    chmod +x ~/.local/share/applications/tux-assistant.desktop
-
----
-
-## 5️⃣ Ejecutar el asistente
-
-* Abre **Actividades**
-* Escribe **Tux Assistant**
-* Haz clic 🐧
-
-El asistente aparecerá flotando en el escritorio.
-
----
-
-## ⭐ Opcional: iniciar automáticamente al encender el sistema
-
-codigo:
-
-    cp ~/.local/share/applications/tux-assistant.desktop ~/.config/autostart/
-
----
-
-## 📦 Dependencias utilizadas
-
-```requirements.txt
-
-PyQt5==5.15.10
-PyQt5-Qt5==5.15.2
-PyQt5-sip==12.13.0
-pygame==2.5.2
-psutil==5.9.8
-requests==2.31.0
-urllib3==2.1.0
-certifi==2024.2.2
-charset-normalizer==3.3.2
-idna==3.6
-
-```
-
----
-
-## 🐧 Nota final
-
-Tux Assistant:
-
-* Usa **IA local**
-* No requiere tokens
-* No tiene límites de uso
-* Funciona completamente offline (tras descargar el modelo)
-
----
+------------------------------------------------------------
+Desinstalar
+------------------------------------------------------------
+    bash desinstalar.sh        (pregunta si borrar tus datos, el modelo y Ollama)
