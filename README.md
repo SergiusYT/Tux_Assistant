@@ -60,7 +60,7 @@ La IA corre en tu computador: nada sale a internet. Tux solo **lee** tu sistema,
 ---
 
 <p align="center">
-  <b>Miguel Alvarado · Melanny Jutinico · David Camacho · Sergio Lozano</b><br>
+  <b>Sergio Andres Lozano Bueno</b><br>
   <sub>Gestión de Tecnología e Innovación · Universidad El Bosque</sub>
 </p>
 
