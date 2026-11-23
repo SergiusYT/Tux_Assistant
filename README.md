@@ -1,3 +1,5 @@
+
+https://github.com/user-attachments/assets/e8fe8e03-386e-47ee-84d8-d8a50263d4a6
 <p align="center">
   <img src="assets/tux_sentado.gif" width="140"/>
 </p>
@@ -13,6 +15,9 @@
 </p>
 
 <!-- VIDEO -->
+
+
+https://github.com/user-attachments/assets/75c07f59-32a6-478b-9699-c62a9b46722d
 
 <br>
 
@@ -34,6 +39,10 @@
 ```bash
 curl -fsSL https://raw.githubusercontent.com/SergiusYT/Tux_Assistant/main/instalar.sh | bash
 ```
+
+
+
+
 
 Instala todo solo: dependencias, la IA local (Ollama + qwen3) y el acceso directo. Funciona en Ubuntu, Debian, Fedora, Arch y openSUSE.
 
