@@ -92,6 +92,12 @@ Si ya clonaste el repositorio: `bash instalar.sh`. Funciona con apt, dnf, pacman
 
 Dentro del cuaderno, el botón **?** muestra la guía completa de controles.
 
+## Documentación y validación
+
+- [Informe final](docs/informe/Informe_Final_Tux_Assistant.pdf) ([versión editable](docs/informe/Informe_Final_Tux_Assistant.docx))
+- [Resultados de la validación técnica](validacion/resultados.md), reproducibles con `./venv/bin/python validacion/benchmark.py`
+- [Protocolo de la prueba con usuarios](validacion/instrumento_usuarios.md)
+
 ## Equipo
 
 Proyecto de Innovación Tecnológica · Gestión de Tecnología e Innovación · Facultad de Ingeniería, Universidad El Bosque

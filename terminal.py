@@ -161,9 +161,9 @@ def _parecido(programa):
     for comun in _COMUNES:
         if len(programa) == len(comun) and programa != comun and sorted(programa) == sorted(comun):
             return comun
-    m = difflib.get_close_matches(programa, _COMUNES, n=1, cutoff=0.6)
-    if m:
-        return m[0]
+    m = difflib.get_close_matches(programa, _COMUNES, n=3, cutoff=0.6)
+    if m:  # a igual parecido, gana el que empieza por la misma letra («nanp» → nano, no snap)
+        return next((c for c in m if c[0] == programa[0]), m[0])
     if _ejecutables is None:
         _ejecutables = set()
         for d in os.environ.get("PATH", "").split(":"):
@@ -204,6 +204,8 @@ def explicacion_rapida(err):
     # Con sudo, un comando inexistente devuelve 1 («sudo: 'apd': command not found»), no 127
     if codigo != 127 and cmd.split()[:1] == ["sudo"] and programa and not shutil.which(programa):
         codigo = 127
+    if codigo == 127 and re.fullmatch(r"cd\.+", programa):  # «cd..» sin espacio
+        return ("Falta un espacio: en Linux se escribe `cd ..` (el comando y luego la carpeta).\n`cd ..`", "")
     if codigo == 127:
         parecido = _parecido(programa)
         if parecido and parecido != programa and shutil.which(parecido):

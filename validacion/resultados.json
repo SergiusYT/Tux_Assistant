@@ -1,0 +1,208 @@
+{
+  "semaforo": {
+    "n": 45,
+    "aciertos": 45,
+    "exactitud": 1.0,
+    "rojos_marcados_como_seguros": 0,
+    "matriz": {
+      "verde": {
+        "verde": 15,
+        "amarillo": 0,
+        "rojo": 0
+      },
+      "amarillo": {
+        "verde": 0,
+        "amarillo": 15,
+        "rojo": 0
+      },
+      "rojo": {
+        "verde": 0,
+        "amarillo": 0,
+        "rojo": 15
+      }
+    },
+    "fallos": []
+  },
+  "errores_escritura": {
+    "n": 20,
+    "corregidos": 20,
+    "tasa": 1.0,
+    "fallos": [],
+    "nota": "Tras corregir los 2 casos que fallaron en la primera medición (cd.. y nanp)"
+  },
+  "modelo": "qwen3:4b-instruct-2507-q4_K_M",
+  "respuestas": {
+    "n": 8,
+    "filas": [
+      {
+        "pregunta": "¿Cuánta RAM estoy usando?",
+        "primer_token_s": 5.0,
+        "total_s": 12.26,
+        "caracteres": 268,
+        "comando_en_acentos": true,
+        "dato_ok": true,
+        "respuesta": "Tu sistema está usando 20.5 GB de RAM de los 37.5 GB disponibles.  \n`free -h`  \n- `free`: muestra el uso de memoria, incluyendo RAM y swap.  \n- `-h`: muestra los valores en formato humano (GB, MB).  \n\n¿Sabes qué significa que el sistema tenga \"20.4 GB en caché/búfer\"?"
+      },
+      {
+        "pregunta": "¿Cuánto espacio libre tengo en el disco?",
+        "primer_token_s": 0.83,
+        "total_s": 11.43,
+        "caracteres": 355,
+        "comando_en_acentos": true,
+        "dato_ok": true,
+        "respuesta": "El sistema tiene espacio libre en varios discos, pero el más grande y útil es el de la partición raíz (/), con 606.4 GB libres.  \n\n`df -h`  \n- `/`: 606.4 GB libres (32% usado)  \n- `/boot/efi`: 1.0 GB libres (1% usado)  \n- `/media/sergio-lozano/TOSHIBA_2TB_Sergio_Lozano`: 570.2 GB libres (69% usado)  \n\n¿Sabes qué significa que un disco tenga \"69% usado\"?"
+      },
+      {
+        "pregunta": "¿Cómo hago ejecutable un script?",
+        "primer_token_s": 0.67,
+        "total_s": 8.71,
+        "caracteres": 383,
+        "comando_en_acentos": true,
+        "respuesta": "El script no puede ejecutarse porque Linux no sabe que es un programa, por eso le falta el permiso de ejecución.  \n`chmod +x script.sh`  \n- `chmod`: cambia los permisos de un archivo.  \n- `+x`: le da el permiso de ejecución al archivo.  \n- `script.sh`: el nombre del archivo que quieres ejecutar.  \n\nDespués puedes correrlo con `./script.sh`. ¿Sabes qué significa el `./` del inicio?"
+      },
+      {
+        "pregunta": "¿Qué hace el comando chmod 755?",
+        "primer_token_s": 0.68,
+        "total_s": 10.4,
+        "caracteres": 381,
+        "comando_en_acentos": true,
+        "respuesta": "El comando `chmod 755` cambia los permisos de un archivo o carpeta para que otros puedan leerlo y ejecutarlo, pero no modificarlo.  \n\n`chmod 755`:  \n- `7`: el propietario puede leer (4), escribir (2), y ejecutar (1) → 4+2+1 = 7  \n- `5`: el grupo puede leer (4) y ejecutar (1) → 4+1 = 5  \n- `5`: otros pueden leer (4) y ejecutar (1) → 4+1 = 5  \n\n¿Qué significa el 7 en los permisos?"
+      },
+      {
+        "pregunta": "¿Cómo instalo un programa en Ubuntu?",
+        "primer_token_s": 0.69,
+        "total_s": 8.13,
+        "caracteres": 428,
+        "comando_en_acentos": true,
+        "respuesta": "En Ubuntu se usan paquetes, y el gestor más común es `apt`. Para instalar un programa, usas `apt install nombre-del-programa`.\n\n`apt install nombre-del-programa`\n- `apt`: herramienta de gestión de paquetes de Ubuntu.\n- `install`: acción para añadir un programa.\n- `nombre-del-programa`: el nombre exacto del software que quieres instalar (por ejemplo, `vlc`, `gimp`, `firefox`).\n\n¿Sabes qué significa"
+      },
+      {
+        "pregunta": "¿Qué es sudo?",
+        "primer_token_s": 0.66,
+        "total_s": 9.89,
+        "caracteres": 496,
+        "comando_en_acentos": true,
+        "respuesta": "sudo es un comando que te permite ejecutar programas con privilegios de administrador, como si fueras el usuario root, sin necesidad de cambiar de usuario.  \n\n`sudo`  \n\n- `sudo`: permite ejecutar comandos con permisos de administrador.  \n- `sudo`: se usa cuando un comando necesita modificar el sistema (como instalar paquetes o cambiar configuraciones).  \n- `sudo` no cambia tu cuenta, solo eleva lo"
+      },
+      {
+        "pregunta": "¿Cuántos núcleos tiene mi procesador?",
+        "primer_token_s": 0.81,
+        "total_s": 7.01,
+        "caracteres": 302,
+        "comando_en_acentos": false,
+        "dato_ok": true,
+        "respuesta": "Tu procesador tiene 12 núcleos y 16 hilos en total.  \nLa diferencia entre núcleos y hilos es que los núcleos son unidades físicas de procesamiento, mientras que los hilos son unidades lógicas que pueden ser creados por el sistema para dividir tareas.  \n\n¿Sabes qué significa el \"hilo\" en un procesador?"
+      },
+      {
+        "pregunta": "¿Qué significa permission denied?",
+        "primer_token_s": 0.66,
+        "total_s": 10.53,
+        "caracteres": 551,
+        "comando_en_acentos": true,
+        "respuesta": "Cuando ves \"permission denied\", significa que Linux no te deja hacer algo porque no tienes los permisos necesarios para hacerlo. Por ejemplo, si intentas modificar un archivo que pertenece a otro usuario, Linux te dice \"permission denied\" porque no tienes autorización.\n\n`ls -l /home/sergio-lozano/.config/`\n\n- `ls`: lista los archivos y carpetas.\n- `-l`: muestra detalles como permisos, tamaño, fech"
+      }
+    ],
+    "primer_token_mediana_s": 0.685,
+    "total_mediana_s": 10.145,
+    "total_max_s": 12.26,
+    "datos_correctos": 3,
+    "datos_evaluados": 3,
+    "con_comando_formateado": 7
+  },
+  "misiones": {
+    "n": 8,
+    "validas": 6,
+    "pasos_promedio": 2.3333333333333335,
+    "segundos_mediana": 9.145,
+    "detalle": [
+      {
+        "leccion": "t1",
+        "meta": "empezar desde cero",
+        "segundos": 8.83,
+        "valida": true,
+        "pasos": 1,
+        "mision": "Aprender a moverse por el sistema de archivos usando la terminal con comandos básicos de navegación"
+      },
+      {
+        "leccion": "t2",
+        "meta": "no repetir errores como `sl -la`",
+        "segundos": 9.04,
+        "valida": false,
+        "pasos": 0,
+        "mision": null
+      },
+      {
+        "leccion": "t3",
+        "meta": "ser desarrollador",
+        "segundos": 7.98,
+        "valida": true,
+        "pasos": 3,
+        "mision": "Crear un respaldo seguro de un archivo importante usando cp y mv, y entender por qué se borra directamente sin papelera"
+      },
+      {
+        "leccion": "p2",
+        "meta": "empezar desde cero",
+        "segundos": 10.0,
+        "valida": true,
+        "pasos": 3,
+        "mision": "Configurar archivos con permisos octales correctos para evitar accesos no autorizados"
+      },
+      {
+        "leccion": "p3",
+        "meta": "no repetir errores como `sl -la`",
+        "segundos": 9.25,
+        "valida": true,
+        "pasos": 2,
+        "mision": "Evitar errores al ejecutar scripts con comandos como sl -la o comandos mal escritos, practicando cómo crear y ejecutar scripts ejecutables correctamente con chmod y shebang"
+      },
+      {
+        "leccion": "k2",
+        "meta": "ser desarrollador",
+        "segundos": 4.89,
+        "valida": false,
+        "pasos": 0,
+        "mision": null
+      },
+      {
+        "leccion": "x1",
+        "meta": "empezar desde cero",
+        "segundos": 9.65,
+        "valida": true,
+        "pasos": 2,
+        "mision": "Verificar que el estudiante puede usar tuberías y redirecciones para manipular entradas y salidas de comandos"
+      },
+      {
+        "leccion": "d2",
+        "meta": "no repetir errores como `sl -la`",
+        "segundos": 9.98,
+        "valida": true,
+        "pasos": 3,
+        "mision": "Configurar un repositorio de Git sin cometer errores comunes como usar `sl -la` o comandos incorrectos"
+      }
+    ]
+  },
+  "recursos": {
+    "gpu": "3415, 4096, NVIDIA GeForce RTX 3050 Laptop GPU",
+    "modelo_disco": "2.5 GB",
+    "codigo_kb": 422.5,
+    "cpu": 16,
+    "ram_total_gb": 37.5
+  },
+  "errores_escritura_v1": {
+    "n": 20,
+    "corregidos": 18,
+    "tasa": 0.9,
+    "fallos": [
+      {
+        "comando": "cd..",
+        "esperado": "cd",
+        "respuesta": "`cd..` no existe en tu sistema: no está instalado o lo escribiste mal."
+      },
+      {
+        "comando": "nanp notas.txt",
+        "esperado": "nano",
+        "respuesta": "`nanp` no existe: parece un error de escritura. ¿Quisiste decir `snap`?\n`snap notas.txt`"
+      }
+    ]
+  }
+}
